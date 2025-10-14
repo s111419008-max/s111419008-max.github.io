@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人名片</title>
+    <style>
+        body {
+            background: #f4f6fb;
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            display: flex;
+            width: 480px;
+            height: 240px;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+            overflow: hidden;
+        }
+        .card-left {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 0;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            /* 正六邊形遮罩 */
+            clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* 正六邊形遮罩 */
+            clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
+        }
+        .card-right {
+            width: 60%;
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .title {
+            font-size: 1.1em;
+            color: #6a82fb;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+        .info {
+            font-size: 0.98em;
+            color: #555;
+            line-height: 1.7;
+        }
+        .info span {
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-left">
+            <div class="avatar">
+                <img src="1.jpg" alt="個人照片">
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="name">陳品妤</div>
+            <div class="title">就是學生</div>
+            <div class="info">
+                <span>📧 iamvenus1207@gmail.com</span>
+                <span>📱 0912-345-678</span>
+                <span>🌐 s111419008-max.github.io</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
